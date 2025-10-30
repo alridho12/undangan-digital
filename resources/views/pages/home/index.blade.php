@@ -1,14 +1,20 @@
 @extends('layouts.app')
 
+@section('title', 'Home')
 @section('content')
     <main class="main">
         {{-- Hero Section --}}
         <section id="hero" class="hero-section">
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row justify-content-center align-items-center text-center text-white" style="min-height: 100vh;">
-                    <div class="col-lg-8">
-                        <h1 class="display-4 fw-bold mb-4">Selamat Datang di WedInv</h1>
-                        <p class="lead mb-4">Solusi Undangan Pernikahan Digital dan Cetak yang Mudah dan Elegan</p>
+                    <div class="col-lg-12">
+                        <h1 class="display-4 fw-bold mb-4 text-uppercase">Selamat Datang Di Karta Invitation</h1>
+                        <p class="lead mb-4">
+                            <span class="typed"
+                                data-typed-items="Solusi Undangan Pernikahan Digital dan Cetak yang Mudah dan Elegan"></span>
+                            <span class="typed-cursor" aria-hidden="true"></span>
+                        </p>
+                        {{-- <p class="lead mb-4">Solusi Undangan Pernikahan Digital dan Cetak yang Mudah dan Elegan</p> --}}
                     </div>
                 </div>
             </div>
@@ -18,8 +24,8 @@
         {{-- Banner Section --}}
         <section id="banner" class="banner">
             <div class="container text-light">
-                <div class="row align-items-center">
-                    <div class="col-md-6 banner-text text-start">
+                <div class="row align-items-center mx-0">
+                    <div class="col-md-6 banner-text text-start" data-aos="fade-left" data-aos-delay="100">
                         <h2 class="fw-light">Promo Spesial Bulan Ini !</h2>
                         <h1 class="fw-bold text-highlight">Diskon 50% Untuk 100 Pengguna Pertama</h1>
                         <a href="#" class="btn btn-light btn-shop fw-bold text-uppercase">Dapatkan Sekarang</a>
@@ -47,7 +53,7 @@
                             <small>*Berlaku hingga 31 Oktober 2025 atau Hanya sampai Minggu ini*</small>
                         </div>
                     </div>
-                    <div class="col-md-6 banner-image text-center">
+                    <div class="col-md-6 banner-image text-center" data-aos="fade-right" data-aos-delay="100">
                         <img src="/images/banner.png" alt="promo banner" class="img-fluid banner-photo">
                     </div>
                 </div>
@@ -55,170 +61,29 @@
         </section>
         {{-- End Banner Section --}}
 
-        {{-- About Section --}}
-        <section id="about" class="about">
-            <div class="container text-center py-5">
-                <h2 class="fw-bold mb-3">Mengapa Memilih Kami</h2>
-                <p class="mb-4">
-                    Kami berkomitmen menghadirkan undangan digital pernikahan yang indah, elegan, dan bermakna.
-                    Setiap desain dibuat dengan sepenuh hati untuk menjadikan momen pernikahan Anda lebih berkesan.
-                </p>
-
-                <div class="mb-5">
-                    <span class="d-block fw-semibold fs-5 text-secondary">
-                        Berdiri sejak <span class="year">2015</span> & telah dipercaya oleh lebih dari <span
-                            class="member">300+</span> pasangan.
-                    </span>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-md-3 mb-4">
-                        <i class="bi bi-heart fs-1 text-danger mb-3"></i>
-                        <h5 class="fw-semibold">Desain Romantis</h5>
-                        <p>Setiap undangan dirancang dengan sentuhan cinta dan keindahan, sesuai tema pernikahan Anda.</p>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <i class="bi bi-emoji-smile fs-1 text-warning mb-3"></i>
-                        <h5 class="fw-semibold">Mudah Digunakan</h5>
-                        <p>Tinggal kirim link undangan melalui WhatsApp atau media sosial — cepat dan praktis.</p>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <i class="bi bi-stars fs-1 text-info mb-3"></i>
-                        <h5 class="fw-semibold">Desain Eksklusif</h5>
-                        <p>Kami menyediakan template premium yang bisa disesuaikan dengan nama, tanggal, dan foto Anda.</p>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <i class="bi bi-gift fs-1 text-pink mb-3"></i>
-                        <h5 class="fw-semibold">Fitur Modern</h5>
-                        <p>Lengkap dengan galeri foto, RSVP, musik latar, dan peta lokasi digital.</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="features">
-                <div class="container text-center py-5">
-                    <h2 class="fw-bold mb-3">Fitur Kami</h2>
-                    <p class="mb-5">
-                        Website Undangan Digital kami dilengkapi dengan berbagai fitur yang memudahkan Anda
-                        mengundang orang-orang terdekat ke acara spesial Anda.
-                    </p>
-
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 mb-4">
-                            <div class="feature-box">
-                                <i class="bi bi-brush fs-2 mb-3"></i>
-                                <h5 class="fw-semibold">Desain Elegan & Modern</h5>
-                                <p>Undangan didesain dengan elegan dan berkesan.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="feature-box">
-                                <i class="bi bi-people fs-2 mb-3"></i>
-                                <h5 class="fw-semibold">Jumlah Tamu Tanpa Batasan</h5>
-                                <p>Tidak ada biaya tambahan untuk berapapun tamu yang diundang.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="feature-box">
-                                <i class="bi bi-type fs-2 mb-3"></i>
-                                <h5 class="fw-semibold">Custom Nama Tamu</h5>
-                                <p>Sertakan nama teman atau keluarga agar undangan lebih eksklusif.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 mb-4">
-                            <div class="feature-box">
-                                <i class="bi bi-phone fs-2 mb-3"></i>
-                                <h5 class="fw-semibold">Akses Dimana Saja</h5>
-                                <p>Akses undangan dari perangkat apa pun dengan cepat.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="feature-box">
-                                <i class="bi bi-check2-square fs-2 mb-3"></i>
-                                <h5 class="fw-semibold">RSVP</h5>
-                                <p>Tamu dapat mengonfirmasi kehadiran langsung melalui undangan.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="feature-box">
-                                <i class="bi bi-envelope-paper-heart fs-2 mb-3"></i>
-                                <h5 class="fw-semibold">Amplop Digital</h5>
-                                <p>Terima hadiah dari tamu secara digital via transfer atau e-money.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 mb-4">
-                            <div class="feature-box">
-                                <i class="bi bi-chat-heart fs-2 mb-3"></i>
-                                <h5 class="fw-semibold">Wedding Wishes</h5>
-                                <p>Tamu dapat mengirim ucapan dan doa langsung di undangan.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="feature-box">
-                                <i class="bi bi-geo-alt fs-2 mb-3"></i>
-                                <h5 class="fw-semibold">Navigasi Lokasi</h5>
-                                <p>Permudah tamu menemukan lokasi acara dengan Google Maps.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="feature-box">
-                                <i class="bi bi-calendar-heart fs-2 mb-3"></i>
-                                <h5 class="fw-semibold">Tambahkan ke Kalender</h5>
-                                <p>Tamu bisa menyimpan tanggal acara ke Google Calendar mereka.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 mb-4">
-                            <div class="feature-box">
-                                <i class="bi bi-music-note-beamed fs-2 mb-3"></i>
-                                <h5 class="fw-semibold">Background Music</h5>
-                                <p>Tambahkan musik pilihan agar undangan terasa lebih hidup.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="feature-box">
-                                <i class="bi bi-images fs-2 mb-3"></i>
-                                <h5 class="fw-semibold">Galeri Foto</h5>
-                                <p>Bagikan foto dan video momen spesial kepada para undangan.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="feature-box">
-                                <i class="bi bi-heart fs-2 mb-3"></i>
-                                <h5 class="fw-semibold">Love Stories</h5>
-                                <p>Ceritakan kisah cinta Anda dengan cara yang manis dan hangat.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        {{-- End About Section --}}
-
         {{-- Preview Section --}}
         <section id="preview" class="preview-section">
             <div class="container text-center py-5">
-                <h2 class="fw-semibold mb-3 text-title">
-                    Mulai Cerita Cintamu dengan Desain yang Indah
-                </h2>
-                <p class="text-secondary mb-5">
-                    Bagikan kebahagiaan pernikahanmu dengan menggunakan website undangan
-                    pernikahan eksklusif dari <strong>WedInv</strong>.
-                    <span class="fw-semibold">Mudah, cepat & berkesan.</span>
-                </p>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="fw-semibold mb-3 text-title">
+                        Mulai Cerita Cintamu dengan Desain yang Indah
+                    </h2>
+                    <p class="text-secondary mb-5">
+                        Bagikan kebahagiaan pernikahanmu dengan menggunakan website undangan
+                        pernikahan eksklusif dari <strong>Karta Invitation</strong>.
+                        <span class="fw-semibold">Mudah, cepat & berkesan.</span>
+                    </p>
+                </div>
 
-                <div class="row align-items-end justify-content-center g-md-5 text-center">
+                <div class="row align-items-end justify-content-center g-md-5 text-center mx-0">
                     <!-- Undangan Digital -->
-                    <div class="col-md-5 d-flex flex-column align-items-center digital-invitation">
+                    <div class="col-md-5 d-flex flex-column align-items-center digital-invitation" data-aos="fade-left" data-aos-delay="100">
                         <img src="images/preview1.png" alt="Undangan Digital" class="img-fluid mockup mb-4" />
-                        <a href="#buat" class="btn btn-preview px-4 py-2">Buat Undangan Digital</a>
+                        <a href="/undangan-digital" class="btn btn-preview px-4 py-2">Buat Undangan Digital</a>
                     </div>
 
                     <!-- Undangan Fisik -->
-                    <div class="col-md-5 d-flex flex-column align-items-center fisik-invitation">
+                    <div class="col-md-5 d-flex flex-column align-items-center fisik-invitation" data-aos="fade-right" data-aos-delay="100">
                         <img src="images/preview2.png" alt="Undangan Fisik" class="img-fluid mockup mb-4" />
                         <a href="#buat" class="btn btn-preview px-4 py-2">Buat Undangan Fisik</a>
                     </div>
@@ -230,7 +95,7 @@
 
         {{-- Price Section --}}
         <section id="price" class="price-section">
-            <div class="container text-center py-5">
+            <div class="container text-center py-5" data-aos="fade-zoom-in" data-aos-delay="100">
                 <h2 class="fw-semibold mb-3 text-title">Pilih Paket</h2>
                 <p class="text-secondary mb-5">
                     Pilih paket yang paling sesuai dengan kebutuhanmu
@@ -361,9 +226,224 @@
         </section>
         {{-- End Price Section --}}
 
+        {{-- Tutorial Section --}}
+        <section id="tutorial" class="tutorial-section">
+            <div class="container text-center py-5">
+                <div data-aos="fade-zoom-in" data-aos-delay="100">
+                    <h2 class="fw-bold mb-3">Langkah Mudah Membuat Undangan</h2>
+                <p class="mb-4">
+                    Proses pembuatan undangan digital yang cepat dan sederhana
+                </p>
+                </div>
+                <div class="row justify-content-center g-4">
+                    <!-- Step 1 -->
+                    <div class="col-md-2 col-sm-6" data-aos="fade-zoom-in" data-aos-delay="200">
+                        <div class="tutorial-card h-100">
+                            <div class="icon mb-3">
+                                <i class="bi bi-clipboard"></i>
+                            </div>
+                            <h5 class="fw-semibold">01 Pilih Paket</h5>
+                            <p>Pilih paket yang sesuai dengan kebutuhanmu.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-md-2 col-sm-6" data-aos="fade-zoom-in" data-aos-delay="300">
+                        <div class="tutorial-card h-100">
+                            <div class="icon mb-3">
+                                <i class="bi bi-cash-stack"></i>
+                            </div>
+                            <h5 class="fw-semibold">02 Lakukan Pembayaran</h5>
+                            <p>Lakukan pemesanan & pembayaran.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-md-2 col-sm-6 " data-aos="fade-zoom-in" data-aos-delay="400">
+                        <div class="tutorial-card h-100">
+                            <div class="icon mb-3">
+                                <i class="bi bi-pencil-square"></i>
+                            </div>
+                            <h5 class="fw-semibold">03 Isi Form Data Pernikahan</h5>
+                            <p>Isi data dirimu, pasanganmu, acara & upload foto-foto.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="col-md-2 col-sm-6" data-aos="fade-zoom-in" data-aos-delay="500">
+                        <div class="tutorial-card h-100">
+                            <div class="icon mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h5 class="fw-semibold">04 Review Undanganmu</h5>
+                            <p>
+                                Undanganmu akan langsung selesai ketika kamu selesai mengisi data dan melakukan review.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="col-md-2 col-sm-6" data-aos="fade-zoom-in" data-aos-delay="600">
+                        <div class="tutorial-card h-100">
+                            <div class="icon mb-3">
+                                <i class="bi bi-send"></i>
+                            </div>
+                            <h5 class="fw-semibold">05 Undangan Siap Disebar</h5>
+                            <p>
+                                Setelah desain selesai, kamu dapat mulai menyebarkan link websitemu ke para tamu undangan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{-- End Tutorial Section --}}
+
+        {{-- About Section --}}
+        <section id="about" class="about">
+            <div class="container text-center py-5" data-aos="fade-zoom-out-up" data-aos-delay="100">
+                <h2 class="fw-bold mb-3">Mengapa Memilih Kami</h2>
+                <p class="mb-4">
+                    Kami berkomitmen menghadirkan undangan digital pernikahan yang indah, elegan, dan bermakna.
+                    Setiap desain dibuat dengan sepenuh hati untuk menjadikan momen pernikahan Anda lebih berkesan.
+                </p>
+
+                <div class="mb-5">
+                    <span class="d-block fw-semibold fs-5 text-secondary">
+                        Berdiri sejak <span class="year">2015</span> & telah dipercaya oleh lebih dari <span
+                            class="member">300+</span> pasangan.
+                    </span>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-3 mb-4">
+                        <i class="bi bi-heart fs-1 text-danger mb-3"></i>
+                        <h5 class="fw-semibold">Desain Romantis</h5>
+                        <p>Setiap undangan dirancang dengan sentuhan cinta dan keindahan, sesuai tema pernikahan Anda.</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <i class="bi bi-emoji-smile fs-1 text-warning mb-3"></i>
+                        <h5 class="fw-semibold">Mudah Digunakan</h5>
+                        <p>Tinggal kirim link undangan melalui WhatsApp atau media sosial — cepat dan praktis.</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <i class="bi bi-stars fs-1 text-info mb-3"></i>
+                        <h5 class="fw-semibold">Desain Eksklusif</h5>
+                        <p>Kami menyediakan template premium yang bisa disesuaikan dengan nama, tanggal, dan foto Anda.</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <i class="bi bi-gift fs-1 text-pink mb-3"></i>
+                        <h5 class="fw-semibold">Fitur Modern</h5>
+                        <p>Lengkap dengan galeri foto, RSVP, musik latar, dan peta lokasi digital.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features" data-aos="fade-zoom-out-up" data-aos-delay="200">
+                <div class="container text-center py-5">
+                    <h2 class="fw-bold mb-3">Fitur Kami</h2>
+                    <p class="mb-5">
+                        Website Undangan Digital kami dilengkapi dengan berbagai fitur yang memudahkan Anda
+                        mengundang orang-orang terdekat ke acara spesial Anda.
+                    </p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mb-4" data-aos="fade-zoom-out-up" data-aos-delay="300">
+                            <div class="feature-box">
+                                <i class="bi bi-brush fs-2 mb-3"></i>
+                                <h5 class="fw-semibold">Desain Elegan & Modern</h5>
+                                <p>Undangan didesain dengan elegan dan berkesan.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-zoom-out-up" data-aos-delay="400">
+                            <div class="feature-box">
+                                <i class="bi bi-people fs-2 mb-3"></i>
+                                <h5 class="fw-semibold">Jumlah Tamu Tanpa Batasan</h5>
+                                <p>Tidak ada biaya tambahan untuk berapapun tamu yang diundang.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-zoom-out-up" data-aos-delay="500">
+                            <div class="feature-box">
+                                <i class="bi bi-type fs-2 mb-3"></i>
+                                <h5 class="fw-semibold">Custom Nama Tamu</h5>
+                                <p>Sertakan nama teman atau keluarga agar undangan lebih eksklusif.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4" data-aos="fade-zoom-out-up" data-aos-delay="300">
+                            <div class="feature-box">
+                                <i class="bi bi-phone fs-2 mb-3"></i>
+                                <h5 class="fw-semibold">Akses Dimana Saja</h5>
+                                <p>Akses undangan dari perangkat apa pun dengan cepat.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-zoom-out-up" data-aos-delay="400">
+                            <div class="feature-box">
+                                <i class="bi bi-check2-square fs-2 mb-3"></i>
+                                <h5 class="fw-semibold">RSVP</h5>
+                                <p>Tamu dapat mengonfirmasi kehadiran langsung melalui undangan.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-zoom-out-up" data-aos-delay="500">
+                            <div class="feature-box">
+                                <i class="bi bi-envelope-paper-heart fs-2 mb-3"></i>
+                                <h5 class="fw-semibold">Amplop Digital</h5>
+                                <p>Terima hadiah dari tamu secara digital via transfer atau e-money.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4" data-aos="fade-zoom-out-up" data-aos-delay="300">
+                            <div class="feature-box">
+                                <i class="bi bi-chat-heart fs-2 mb-3"></i>
+                                <h5 class="fw-semibold">Wedding Wishes</h5>
+                                <p>Tamu dapat mengirim ucapan dan doa langsung di undangan.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-zoom-out-up" data-aos-delay="400">
+                            <div class="feature-box">
+                                <i class="bi bi-geo-alt fs-2 mb-3"></i>
+                                <h5 class="fw-semibold">Navigasi Lokasi</h5>
+                                <p>Permudah tamu menemukan lokasi acara dengan Google Maps.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-zoom-out-up" data-aos-delay="500">
+                            <div class="feature-box">
+                                <i class="bi bi-calendar-heart fs-2 mb-3"></i>
+                                <h5 class="fw-semibold">Tambahkan ke Kalender</h5>
+                                <p>Tamu bisa menyimpan tanggal acara ke Google Calendar mereka.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4" data-aos="fade-zoom-out-up" data-aos-delay="300">
+                            <div class="feature-box">
+                                <i class="bi bi-music-note-beamed fs-2 mb-3"></i>
+                                <h5 class="fw-semibold">Background Music</h5>
+                                <p>Tambahkan musik pilihan agar undangan terasa lebih hidup.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-zoom-out-up" data-aos-delay="400">
+                            <div class="feature-box">
+                                <i class="bi bi-images fs-2 mb-3"></i>
+                                <h5 class="fw-semibold">Galeri Foto</h5>
+                                <p>Bagikan foto dan video momen spesial kepada para undangan.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-zoom-out-up" data-aos-delay="500">
+                            <div class="feature-box">
+                                <i class="bi bi-heart fs-2 mb-3"></i>
+                                <h5 class="fw-semibold">Love Stories</h5>
+                                <p>Ceritakan kisah cinta Anda dengan cara yang manis dan hangat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{-- End About Section --}}
+
         {{-- Testimonial Section --}}
         <section id="testimonial" class="testimonial-section py-5">
-            <div class="container text-center py-5 frame-testimonial">
+            <div class="container text-center py-5 frame-testimonial" data-aos="fade-up" data-aos-delay="100">
                 <h2 class="fw-semibold mb-3 text-title">Apa Kata Mereka</h2>
                 <p class="text-light mb-5">
                     Dengarkan pengalaman dari pasangan yang telah menggunakan layanan kami
@@ -377,7 +457,7 @@
                             <div class="card testimonial-card mx-auto" style="max-width: 600px;">
                                 <div class="card-body">
                                     <p class="testimonial-text mb-4">
-                                        "WedInv membuat undangan pernikahan kami menjadi sangat istimewa.
+                                        "Karta Invitation membuat undangan pernikahan kami menjadi sangat istimewa.
                                         Desainnya elegan dan mudah digunakan. Tamu kami sangat terkesan!"
                                     </p>
                                     <h5 class="fw-semibold mb-0">Alya & Rian</h5>
@@ -440,7 +520,7 @@
         {{-- Kontak Section --}}
         <section id="contact" class="contact-section py-5">
             <div class="container">
-                <div class="row align-items-center mb-5">
+                <div class="row align-items-center mb-5" data-aos="fade-down" data-aos-delay="100">
                     <div class="col-md-6">
                         <h2 class="fw-semibold mb-3 text-title">Contact Us</h2>
                         <p class="text-muted">
@@ -456,12 +536,11 @@
                     </div>
                 </div>
 
-                <div class="row gy-5">
-                    <!-- Contact Info -->
-                    <div class="col-md-6">
+                <div class="row gy-5 mx-0">
+                    <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
                         <h5 class="fw-semibold mb-3 information">Contact Information</h5>
                         <p class="text-muted mb-4">
-                            Tim WedInv siap membantu Anda kapan saja. Kami berkomitmen memberikan
+                            Tim Karta Invitation siap membantu Anda kapan saja. Kami berkomitmen memberikan
                             pelayanan terbaik agar momen spesial Anda semakin istimewa.
                         </p>
 
@@ -480,7 +559,7 @@
                                 <i class="bi bi-envelope"></i>
                             </div>
                             <div class="ms-3">
-                                <h6 class="mb-0 fw-semibold text-dark">wedinv@gmail.com</h6>
+                                <h6 class="mb-0 fw-semibold text-dark">Karta Invitation@gmail.com</h6>
                                 <small class="text-muted">We reply within 24 hours</small>
                             </div>
                         </div>
@@ -503,15 +582,14 @@
                         </div>
                     </div>
 
-                    <!-- Form + Map -->
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
                         <div class="row g-4">
                             <div class="col-md-12">
                                 <div class="p-4 rounded-4 form-box">
                                     <h5 class="fw-semibold mb-3 text-white">Get In Touch!</h5>
                                     <p class="text-light small mb-4">
                                         Ingin memiliki undangan digital impian Anda? Kirim pesan kepada
-                                        kami, dan tim <strong>WedInv</strong> akan segera menghubungi
+                                        kami, dan tim <strong>Karta Invitation</strong> akan segera menghubungi
                                         Anda untuk membantu proses pembuatan yang mudah dan cepat.
                                     </p>
                                     <form>
