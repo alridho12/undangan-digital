@@ -13,3 +13,7 @@ Route::get('/home', function () {
 Route::get('/undangan-digital', function () {
     return view('pages.undangan-digital.index');
 });
+
+Route::get('/dashboard-customer', function () {
+    return view('pages.dashboard-customer.index');
+});
