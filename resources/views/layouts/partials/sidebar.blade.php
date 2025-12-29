@@ -96,26 +96,38 @@
         </a>
         <ul class="list-unstyled ps-0 flex-grow-1">
             <li class="mb-1">
-                <button class="btn  d-inline-flex align-items-center rounded border-0 collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-                    Dashboard
-                </button>
+                <a href="/dashboard-customer">
+                    <button class="btn  d-inline-flex align-items-center rounded border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                        Dashboard
+                    </button>
+                </a>
             </li>
             <li class="mb-1">
-                <button class="btn  d-inline-flex align-items-center rounded border-0 collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-                    Orders
-                </button>
+                <a href="/order">
+                    <button class="btn  d-inline-flex align-items-center rounded border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                        Orders
+                    </button>
+                </a>
+            </li>
+            <li class="mb-1">
+                <a href="/info-akun">
+                    <button class="btn  d-inline-flex align-items-center rounded border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                        Info Akun
+                    </button>
+                </a>
             </li>
 
-            <li class="mb-1">
+            {{-- <li class="mb-1">
                 <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                     data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
                     Akun
                 </button>
                 <div class="collapse" id="dashboard-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="/admin/brand"
+                        <li><a href="/info-akun"
                                 class="link-body-emphasis d-inline-flex text-decoration-none rounded">Info Account</a>
                         </li>
                         <li><a href="/admin/brand"
@@ -123,13 +135,13 @@
                         </li>
                     </ul>
                 </div>
-            </li>
-            <li class="mb-1">
+            </li> --}}
+            {{-- <li class="mb-1">
                 <button class="btn  d-inline-flex align-items-center rounded border-0 collapsed"
                     data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
                     Download
                 </button>
-            </li>
+            </li> --}}
             <li class="border-top my-3"></li>
         </ul>
         <form action="" method="POST">

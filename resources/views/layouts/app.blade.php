@@ -19,6 +19,7 @@
 
         <main class="hero">
             @yield('content')
+            @yield('modal')
         </main>
 
         @include('layouts.partials.footer')

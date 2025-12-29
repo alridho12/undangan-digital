@@ -3,7 +3,8 @@ function aosInit() {
         duration: 600,
         easing: 'ease-in-out',
         once: false,
-        mirror: false
+        mirror: false,
+        offset: 50
     });
 }
 window.addEventListener('load', aosInit);

@@ -44,9 +44,18 @@ body {
 }
 
 a {
-    color: var(--accent-color);
+    color: #d6b86a;
     text-decoration: none;
     transition: 0.3s;
+}
+
+.modal {
+    font-family: "Poppins", sans-serif;
+}
+
+.modal-title {
+    color: #000000;
+    font-weight: 600;
 }
 
 /* navbar */
@@ -926,7 +935,7 @@ li.cross::before {
     /* font-family: "Poppins", sans-serif; */
 }
 
-.banner-digital{
+.banner-digital {
     font-family: cinzel, sans-serif;
 }
 
@@ -955,6 +964,43 @@ li.cross::before {
     color: #fff;
     font-family: poppins, sans-serif;
 }
+
+/* info akun */
+
+.account-info .card {
+    background-color: #006a4e;
+    color: #fff;
+    font-family: poppins, sans-serif;
+    transition: all 0.2s ease;
+
+}
+
+.account-info .card:hover {
+    transform: translateY(-2px);
+}
+
+.account-info .badge {
+    background-color: #3a91aa;
+}
+
+.profile-icon {
+    font-size: 80px;
+
+}
+
+/* Orders */
+
+.orders-section .card {
+    background-color: #006a4e;
+    color: #fff;
+    font-family: poppins, sans-serif;
+
+}
+
+.orders-section .badge.diamond {
+    background-color: #3a91aa;
+}
+
 
 
 /* Auth-section */
@@ -1009,6 +1055,11 @@ li.cross::before {
     [data-aos-delay] {
         transition-delay: 0 !important;
     }
+
+    /* [data-aos="fade-left"],
+    [data-aos="fade-right"] {
+        transform: none !important;
+    } */
 
     .rounded-md-start-4 {
         border-top-left-radius: 0;

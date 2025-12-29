@@ -17,3 +17,15 @@ Route::get('/undangan-digital', function () {
 Route::get('/dashboard-customer', function () {
     return view('pages.dashboard-customer.index');
 });
+
+Route::get('/info-akun', function () {
+    return view('pages.profile.index');
+});
+
+Route::get('/order', function () {
+    return view('pages.order.index');
+});
+
+Route::get('/redasian', function () {
+    return view('pages.red-asian.index');
+});
