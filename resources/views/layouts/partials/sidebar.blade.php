@@ -84,7 +84,7 @@
     }
 </style>
 
-<div class="main-sidebar d-flex">
+{{-- <div class="main-sidebar d-flex">
     <!-- Sidebar -->
     <div id="sidebar" class="sidebar d-flex flex-column flex-shrink-0 p-3">
         <!-- konten sidebar yang sudah kamu buat -->
@@ -120,28 +120,73 @@
                 </a>
             </li>
 
-            {{-- <li class="mb-1">
+            <li class="border-top my-3"></li>
+        </ul>
+        <form action="" method="POST">
+            @csrf
+            <button type="submit"
+                class="btn btn-outline-danger w-100 d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-right me-2" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M6.146 11.354a.5.5 0 0 0 .708 0L10 8.207l-3.146-3.147a.5.5 0 0 0-.708.708L8.793 8l-2.647 2.646a.5.5 0 0 0 0 .708z" />
+                    <path fill-rule="evenodd" d="M13 8a.5.5 0 0 0-.5-.5H1a.5.5 0 0 0 0 1h11.5a.5.5 0 0 0 .5-.5z" />
+                    <path fill-rule="evenodd"
+                        d="M13 1a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V1zM3 0a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V0z" />
+                </svg>
+                Logout
+            </button>
+        </form>
+    </div>
+
+</div> --}}
+
+<div class="main-sidebar d-flex">
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar d-flex flex-column flex-shrink-0 p-3">
+        <!-- konten sidebar yang sudah kamu buat -->
+        <a href="/"
+            class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+            <svg class="bi pe-none me-2" width="30" height="24" aria-hidden="true">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
+        <ul class="list-unstyled ps-0 flex-grow-1">
+            <li class="mb-1">
+                <a href="/dashboard-customer">
+                    <button class="btn  d-inline-flex align-items-center rounded border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                        Dashboard
+                    </button>
+                </a>
+            </li>
+            <li class="mb-1">
                 <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                     data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                    Akun
+                    Pesanan
                 </button>
                 <div class="collapse" id="dashboard-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="/info-akun"
-                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Info Account</a>
+                        <li><a href="/order"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Daftar Pesenan</a>
                         </li>
-                        <li><a href="/admin/brand"
-                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Edit Account</a>
+                        <li>
+                            <a href="/status-pesanan"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Kelola Status
+                                Pesanan</a>
                         </li>
                     </ul>
                 </div>
-            </li> --}}
-            {{-- <li class="mb-1">
-                <button class="btn  d-inline-flex align-items-center rounded border-0 collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-                    Download
-                </button>
-            </li> --}}
+            </li>
+            <li class="mb-1">
+                <a href="/info-akun">
+                    <button class="btn  d-inline-flex align-items-center rounded border-0 collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                        Manajemen Konten
+                    </button>
+                </a>
+            </li>
+
             <li class="border-top my-3"></li>
         </ul>
         <form action="" method="POST">
@@ -166,6 +211,30 @@
 <div id="sidebarToggle" class="sidebar-toggle">
     <i class="bi bi-chevron-left"></i>
 </div>
+
+
+{{-- <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                    Akun
+                </button>
+                <div class="collapse" id="dashboard-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="/info-akun"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Info Account</a>
+                        </li>
+                        <li><a href="/admin/brand"
+                                class="link-body-emphasis d-inline-flex text-decoration-none rounded">Edit Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </li> --}}
+{{-- <li class="mb-1">
+                <button class="btn  d-inline-flex align-items-center rounded border-0 collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    Download
+                </button>
+            </li> --}}
 
 <script>
     const sidebar = document.getElementById('sidebar');

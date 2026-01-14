@@ -10,14 +10,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Style+Script&display=swap"
-        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Style+Script&family=ZCOOL+XiaoWei&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@400..900&family=Sacramento&family=Style+Script&family=ZCOOL+XiaoWei&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <style>
@@ -31,7 +29,7 @@
         body {
             margin: 0;
             font-family: "Poppins", sans-serif;
-            background: #720000;
+            background: #fff;
         }
 
         body.no-scroll {
@@ -48,12 +46,12 @@
             width: 48px;
             height: 48px;
 
-            background: rgba(114, 0, 0, 0.8);
+            background: rgba(255, 255, 255, 0.8);
             /* senada tema */
-            border: 1px solid #edb659;
+            border: 1px solid #c9a25d;
             border-radius: 50%;
 
-            color: #edb659;
+            color: #c9a25d;
             font-size: 20px;
 
             display: flex;
@@ -83,7 +81,8 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            background-image: url('./images/rabg.png');
+            background-color: #fff;
+            background-image: url('./images/ifpatbg.png');
             background-size: cover;
             background-position: center;
             transition: transform 1s ease-in-out;
@@ -109,7 +108,7 @@
         .left-top-patern {
             position: absolute;
             top: 0;
-            left: -18px;
+            left: -160px;
             display: flex;
             flex-direction: row;
             align-items: flex-start;
@@ -117,53 +116,95 @@
 
         #patern1 {
             position: absolute;
-            width: 200px;
+            width: 370px;
             height: auto;
             left: -40px;
         }
 
         #patern2 {
             position: absolute;
-            width: 130px;
+            width: 200px;
             height: auto;
-            left: 60px;
+            left: 32px;
+            z-index: -1;
+        }
+
+        #patern3 {
+            position: absolute;
+            width: 185px;
+            top: 200px;
+            left: 80px;
+            animation: waveFlower 4s ease-in-out infinite;
+            transform-origin: bottom center;
+        }
+
+        @keyframes waveFlower {
+            0% {
+                transform: rotate(0deg) translateY(0);
+            }
+
+            25% {
+                transform: rotate(2deg) translateY(-2px);
+            }
+
+            50% {
+                transform: rotate(-2deg) translateY(0);
+            }
+
+            75% {
+                transform: rotate(1.5deg) translateY(-1px);
+            }
+
+            100% {
+                transform: rotate(0deg) translateY(0);
+            }
         }
 
         .right-top-patern {
             position: absolute;
             top: 0;
-            right: -18px;
+            right: -160px;
             display: flex;
             flex-direction: row;
             align-items: flex-start;
         }
 
-        #patern3 {
+        #patern4 {
             position: absolute;
-            width: 130px;
+            width: 370px;
             height: auto;
-            right: 60px;
+            right: -40px;
         }
 
-        #patern4 {
+        #patern5 {
             position: absolute;
             width: 200px;
             height: auto;
-            right: -40px;
+            right: 32px;
+            z-index: -1;
+        }
+
+        #patern6 {
+            position: absolute;
+            width: 185px;
+            top: 200px;
+            right: 80px;
+            animation: waveFlower 4s ease-in-out infinite;
+            transform-origin: bottom center;
         }
 
         /* --- LOGO SECTION --- */
 
         .center-logo {
             position: absolute;
-            top: 27%;
+            top: 10%;
             left: 50%;
             transform: translate(-50%, -50%);
-
+            z-index: -1;
         }
 
-        #patern5 {
-            width: 200px;
+        #patern7 {
+            width: 330px;
             height: auto;
         }
 
@@ -173,52 +214,58 @@
             position: absolute;
             text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
             width: 100%;
-            margin-top: 105px;
+            margin-top: -80px;
+            ;
         }
 
         .sub-title {
-            font-family: "Style Script", cursive;
-            color: #edb659;
+            font-family: "sacramento", cursive;
+            color: #8f7c58;
             font-size: 26px;
-            /* margin: 0; */
+            font-feature-settings: "lnum" 1, "pnum" 0;
+        }
+
+        .sub-title .num {
+            font-size: 0.75em;
+            vertical-align: middle;
         }
 
         .bride-name {
-            font-family: "ZCOOL XiaoWei", sans-serif;
-            color: #edb659;
+            font-family: "allura", sans-serif;
+            color: #bc8a2c;
             font-size: 35px;
         }
 
-        #patern6 {
+        /* #patern8 {
             position: absolute;
             width: 142px;
             height: auto;
             left: -82px;
         }
 
-        #patern7 {
+        #patern9 {
             position: absolute;
             width: 142px;
             height: auto;
             right: -82px;
-        }
+        } */
 
         /* --- COVER CONTENT SECTION --- */
         .content-sub-title {
             position: relative;
-            top: -37px;
+            top: -18px;
         }
 
         .cover-sub-title {
             position: absolute;
             text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
             width: 100%;
-            bottom: -17px;
+            bottom: 70px;
         }
 
         .guest-name {
-            font-family: "ZCOOL XiaoWei", sans-serif;
-            color: #edb659;
+            font-family: "allura", sans-serif;
+            color: #bc8a2c;
             font-size: 32px;
         }
 
@@ -239,14 +286,45 @@
         }
 
         .open-btn {
-            /* margin-top: 20px; */
-            /* margin-bottom: 20px; */
-            padding: 12px 28px;
-            background: #720000;
-            color: white;
-            border: #e3d172 1px solid;
-            border-radius: 25px;
+            position: relative;
+            padding: 14px 22px;
+            background: #fff;
+            border: 2px solid #c9a25d;
+            /* gold */
+            border-radius: 40px;
+            font-family: 'Cinzel', serif;
             font-size: 16px;
+            letter-spacing: 2px;
+            color: #8f7c58;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        /* ornamen kiri kanan */
+        .open-btn::before,
+        .open-btn::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #c9a25d;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        .open-btn::before {
+            left: -12px;
+        }
+
+        .open-btn::after {
+            right: -12px;
+        }
+
+        /* hover effect */
+        .open-btn:hover {
+            background: #c9a25d;
+            color: #fff;
         }
 
         /* --- BOTTOM PATTERN --- */
@@ -259,9 +337,11 @@
 
         #patern10 {
             position: absolute;
-            width: 150px;
+            width: 240px;
             height: auto;
-            left: -18px;
+            left: -34px;
+            animation: waveFlower 4s ease-in-out infinite;
+            transform-origin: bottom center;
         }
 
         .right-bottom-patern {
@@ -272,10 +352,11 @@
 
         #patern11 {
             position: absolute;
-            width: 150px;
+            width: 240px;
             height: auto;
-            right: -18px;
-
+            right: -34px;
+            animation: waveFlower 4s ease-in-out infinite;
+            transform-origin: bottom center;
         }
 
         /* --- FIRST SECTION --- */
@@ -290,49 +371,85 @@
         }
 
         .wedding-card {
-            height: 540px;
-            background:
-                linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #720000 100%),
-                url('./images/rabride.png') center/cover no-repeat;
-            border: 2px solid #edb659;
-            padding: 20px;
+            background-image: url('./images/ifpatbgwc.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100%;
+            max-width: 340px;
+            margin: auto;
             box-sizing: border-box;
+            font-family: "sacramento", serif;
+            color: #3b3434;
+            ;
         }
 
-        /* konten bawah */
-        .content-first-section {
-            text-align: center;
-            color: #edb659;
-            font-family: "Style Script", cursive;
-            height: 100%;
-
-
-        }
-
-        .content-first-section h1 {
-            font-family: "ZCOOL XiaoWei", sans-serif;
-            font-size: 26px;
-            letter-spacing: 3px;
-            margin: 5px 0;
-        }
-
-        .content-first-section .and {
-            font-size: 16px;
-            margin: 4px 0;
-        }
-
-        /* icon cincin */
-        .icon {
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-
-        .pattern-first-section {}
-
+        /* FRAME FOTO */
         #patern12 {
-            width: 100px;
+            position: absolute;
+            width: 230px;
+            height: auto;
+            top: 378px;
+            left: 16px;
+            z-index: 2;
+        }
+
+        #patern13 {
+            position: absolute;
+            width: 230px;
+            height: auto;
+            top: 378px;
+            right: 16px;
+            z-index: 2;
+        }
+
+        .photo-frame {
+            position: relative;
+            height: 490px;
+            padding: 10px;
+            border: 2px solid #e0c088;
+            border-radius: 180px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .photo-inner {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 170px;
+        }
+
+        .photo-inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        .date-card-container {
+            font-family: 'cinzel', serif;
+        }
+
+        .content .card-day,
+        .content .card-month {
+            border-top: 2px solid #3b3434;
+            border-bottom: 2px solid #3b3434;
+            padding: 0 10px;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .ring-icon {
+            width: 48px;
             height: auto;
         }
+
 
         /* --- FIRST INFO SECTION --- */
         .info-first-section .date {
@@ -361,7 +478,11 @@
             min-height: 100vh;
             position: relative;
             z-index: 2;
-            background: #720000;
+            background: #ffffff;
+            background-image: url('./images/ifpatbgwc.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
 
         /* --- BIO SECTION --- */
@@ -370,46 +491,47 @@
             /* min-height: 100vh; */
         }
 
-        #patern13 {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            object-position: top;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
         #patern14 {
             width: 100%;
-            aspect-ratio: 1 / 1;
             object-position: top;
             object-fit: cover;
             border-radius: 50%;
+            height: 322px;
+        }
+
+        #patern15 {
+            width: 100%;
+            object-position: top;
+            object-fit: cover;
+            border-radius: 50%;
+            height: 322px;
         }
 
         .bio-bride-image,
         .bio-groom-image {
-            border: 4px solid #edb659;
+            /* border: 4px solid #edb659; */
         }
 
         .bio-groom-text h1,
         .bio-bride-text h1 {
-            font-family: "ZCOOL XiaoWei", sans-serif;
+            font-family: "sacramento", serif;
             font-size: 28px;
-            color: #edb659;
+            color: #3b3434;
+            ;
         }
 
         .bio-groom-text p,
         .bio-bride-text p {
             font-family: "cinzel", serif;
             font-size: 14px;
-            color: #edb659;
+            color: #3b3434;
         }
 
         .quote-text {
             margin-top: 40px;
             text-align: center;
-            font-family: "Style Script", cursive;
-            color: #edb659;
+            font-family: "allura", sans-serif;
+            color: #3b3434;
             font-size: 20px;
         }
 
@@ -425,25 +547,6 @@
 
         .info-left-top-patern {
             position: absolute;
-            top: 0;
-            left: -18px;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-        }
-
-        #patern15 {
-            position: absolute;
-            width: 110px;
-            height: auto;
-            left: 35px;
-            top: 47px;
-        }
-
-        .info-right-top-patern {
-            position: absolute;
-            top: 0;
-            right: -18px;
             display: flex;
             flex-direction: row;
             align-items: flex-start;
@@ -451,20 +554,15 @@
 
         #patern16 {
             position: absolute;
-            width: 180px;
+            width: 158px;
             height: auto;
-            right: -9px;
+            left: 1px;
+            top: 3px;
         }
 
-        .info-bottom-patern {
-            position: relative;
-            bottom: 96px;
-        }
-
-        .info-left-bottom-patern {
+        .info-right-top-patern {
             position: absolute;
-            bottom: 0;
-            left: -18px;
+            right: -2px;
             display: flex;
             flex-direction: row;
             align-items: flex-start;
@@ -474,37 +572,60 @@
             position: absolute;
             width: 180px;
             height: auto;
-            left: -9px;
+            right: 0px;
+            animation: waveFlower 4s ease-in-out infinite;
+            transform-origin: bottom center;
+        }
+
+        .info-bottom-patern {
+            position: relative;
+            bottom: 96px;
+        }
+
+        .info-left-bottom-patern {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            bottom: 42px;
+        }
+
+        #patern18 {
+            position: absolute;
+            width: 180px;
+            height: auto;
+            left: 0px;
+            animation: waveFlower 4s ease-in-out infinite;
+            transform-origin: bottom center;
         }
 
         .info-right-bottom-patern {
             position: absolute;
-            bottom: 25px;
-            right: -18px;
+            right: 1px;
             display: flex;
             flex-direction: row;
             align-items: flex-start;
         }
 
-        #patern18 {
+        #patern19 {
             position: absolute;
-            width: 110px;
+            width: 158px;
             height: auto;
-            right: 35px;
-            top: 47px;
+            right: 1px;
+            top: 3px;
         }
 
         /* --- INFO WHERE WHEN --- */
         .info-where-when {
             position: relative;
             text-align: center;
-            color: #edb659;
+            color: #3b3434;
             font-family: 'cinzel', serif;
         }
 
         .info-where-when-section {
             position: relative;
-            top: 27px;
+            top: 40px;
         }
 
         .info-where-when h4 {
@@ -523,7 +644,7 @@
         }
 
         hr {
-            border: 1px solid #edb659;
+            border: 1px solid #c9a25d;
             width: 60%;
             margin-left: auto;
             margin-right: auto;
@@ -535,7 +656,7 @@
         .event-box {
             max-width: 320px;
             margin: auto;
-            color: #edb659;
+            color: #3b3434;
         }
 
         .event-box h3 {
@@ -569,27 +690,29 @@
             display: inline-block;
             padding: 10px 26px;
             margin: 6px 0;
-            background: #720000;
-            color: white !important;
-            border: #e3d172 1px solid;
+            background: #ffffff;
+            color: #c9a25d !important;
+            border: #c9a25d 1px solid;
             border-radius: 30px;
             font-size: 13px;
             text-decoration: none;
             font-family: 'cinzel', serif;
+            letter-spacing: 2px;
         }
 
         .btn-event.outline {
             background: transparent;
-            background: #720000;
-            color: white;
-            border: #e3d172 1px solid;
+            background: #ffffff;
+            color: #c9a25d;
+            border: #c9a25d 1px solid;
             font-family: 'cinzel', serif;
+            letter-spacing: 2px;
         }
 
         /* --- LIVE STREAMING SECTION --- */
         .live-streaming-section {
             text-align: center;
-            color: #edb659;
+            color: #3b3434;
             font-family: 'cinzel', serif;
             margin-top: 72px;
         }
@@ -606,18 +729,19 @@
             display: inline-block;
             padding: 10px 26px;
             margin: 6px 0;
-            background: #720000;
-            color: white !important;
-            border: #e3d172 1px solid;
+            background: #ffffff;
+            color: #c9a25d !important;
+            border: #c9a25d 1px solid;
             border-radius: 30px;
             font-size: 13px;
             text-decoration: none;
             font-family: 'cinzel', serif;
+            letter-spacing: 2px;
         }
 
         /* --- LOVE STORIES SECTION --- */
         .love-stories-section {
-            color: #edb659;
+            color: #3b3434;
             font-family: 'cinzel', serif;
             text-align: center;
             padding-bottom: 40px;
@@ -625,8 +749,8 @@
 
         }
 
-        #patern19 {
-            width: 73px;
+        #patern20 {
+            width: 200px;
             height: auto;
         }
 
@@ -645,14 +769,32 @@
             /* margin-top: 20px; */
         }
 
-        .tl-trigger {
+        .timeline-image {
             width: 95px;
             height: 300px;
-            cursor: pointer;
-            object-fit: cover;
-            object-position: center;
-            clip-path: polygon(100% 0, 100% 90%, 0 100%, 0% 10%);
+            overflow: hidden;
+            position: relative;
         }
+
+        .tl-trigger {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .timeline-item {
+            margin: 0 1px;
+        }
+
+
+        .timeline-item:nth-child(odd) .timeline-image {
+            border-radius: 120px 20px 20px 120px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-image {
+            border-radius: 20px 120px 120px 20px;
+        }
+
 
 
         .timeline-popup {
@@ -685,6 +827,7 @@
         }
 
         .timeline-content-inner {
+            color: #fff;
             background: rgba(0, 0, 0, 0.5);
             padding: 24px;
             border-radius: 16px;
@@ -697,7 +840,7 @@
 
         /* GLIMPSE SECTION */
         .glimpes-section {
-            color: #edb659;
+            color: #3b3434;
             font-family: 'cinzel', serif;
             text-align: center;
             padding-bottom: 40px;
@@ -744,6 +887,20 @@
             min-height: 90px;
         }
 
+        .gallery-bot {
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px;
+            max-width: 100%;
+            gap: 10px;
+        }
+
+        .gallery-bot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         /* RSVP SECTION */
         .rsvp-section {
             padding: 60px 20px;
@@ -753,14 +910,14 @@
         }
 
         .rsvp-content {
-            background-image: url('./images/rabgrsvp.png');
+            background-image: url('./images/ifbgrsvp.png');
             width: 100%;
             max-width: 420px;
             padding: 30px 20px 40px;
-            border: 2px solid #edb659;
-            outline: 2px solid #edb659;
+            border: 2px solid #c9a25d;
+            outline: 2px solid #c9a25d;
             outline-offset: -12px;
-            color: #edb659;
+            color: #c9a25d;
             text-align: center;
         }
 
@@ -819,14 +976,15 @@
             display: block;
             width: 100%;
             padding: 12px;
-            background: #720000;
-            color: white;
-            border: #e3d172 1px solid;
+            background: #ffffff;
+            color: #c9a25d;
+            border: #c9a25d 1px solid;
             border-radius: 25px;
             font-size: 16px;
             cursor: pointer;
             text-align: center;
             font-family: 'Cinzel', serif;
+            letter-spacing: 2px;
         }
 
         .rsvp-btn:hover {
@@ -841,23 +999,25 @@
         }
 
         .wish-form {
+            background-image: url('./images/ifbgrsvp.png');
             display: flex;
             flex-direction: column;
             gap: 16px;
             padding: 30px 20px 40px;
-            border: 2px solid #edb659;
-            outline: 2px solid #edb659;
+            border: 2px solid #c9a25d;
+            outline: 2px solid #c9a25d;
             outline-offset: -12px;
-            color: #edb659;
+            color: #c9a25d;
         }
 
         .wish-btn {
             display: block;
+            letter-spacing: 2px;
             width: 100%;
             padding: 12px;
-            background: #720000;
-            color: white;
-            border: #e3d172 1px solid;
+            background: #ffffff;
+            color: #c9a25d;
+            border: #c9a25d 1px solid;
             border-radius: 25px;
             font-size: 16px;
             cursor: pointer;
@@ -870,7 +1030,7 @@
             flex-direction: column;
             gap: 16px;
             padding: 30px 0px 40px;
-            color: #edb659;
+            color: #c9a25d;
         }
 
         .wish-card {
@@ -909,7 +1069,7 @@
             align-items: flex-start;
         }
 
-        #patern20 {
+        #patern21 {
             position: absolute;
             width: 100px;
             height: auto;
@@ -926,9 +1086,9 @@
             align-items: flex-start;
         }
 
-        #patern21 {
+        #patern22 {
             position: absolute;
-            width: 100px;
+            width: 105px;
             height: auto;
             right: 35px;
             bottom: 0px;
@@ -936,7 +1096,7 @@
 
         .gift-section {
             font-family: 'Cinzel', serif;
-            color: #edb659;
+            color: #3b3434;
             text-align: center;
         }
 
@@ -956,11 +1116,12 @@
 
         .gift-content .copy-btn {
             display: inline-block;
+            letter-spacing: 2px;
             padding: 10px 26px;
             margin: 6px 0;
-            background: #720000;
-            color: white !important;
-            border: #e3d172 1px solid;
+            background: #fff;
+            color: #c9a25d !important;
+            border: #c9a25d 1px solid;
             border-radius: 30px;
             font-size: 13px;
             text-decoration: none;
@@ -971,7 +1132,7 @@
         /* THANK YOU SECTION */
         .thank-section {
             position: relative;
-            background-image: url('./images/rabgthank.png');
+            background-image: url('./images/ifbgthank.png');
             background-size: cover;
             background-position: center;
             width: 100%;
@@ -979,7 +1140,7 @@
             padding: 40px 20px;
             text-align: center;
             font-family: 'Cinzel', serif;
-            color: #edb659;
+            color: #ffffff;
         }
 
         .thank-section::before {
@@ -1005,19 +1166,20 @@
         }
 
         .thank-content p {
-            color: #ffdca0;
+            color: #fff;
             font-size: 16px;
             line-height: 1.6;
         }
 
         /* FOOTER SECTION */
         .footer-section {
-            background: #5a0000;
+            background: #edb659;
             padding: 20px;
             text-align: center;
             font-family: 'Cinzel', serif;
-            color: #edb659;
+            color: #fff;
         }
+
         .footer-section .footer-logo img {
             width: 48px;
             height: auto;
@@ -1044,49 +1206,53 @@
     <div id="cover">
         <div class="cover-content">
             <div class="top-patern">
-                <div class="left-top-patern">
-                    <img id="patern1" src="./images/rapattl.png" alt="pattern1">
-                    <img id="patern2" src="./images/rapattl1.png" alt="pattern2">
+                <div class="left-top-patern" data-aos="fade-right" data-aos-delay="300">
+                    <img id="patern1" src="./images/ifpatltp.png" alt="pattern1">
+                    <img id="patern2" src="./images/ifpatlm.png" alt="pattern2">
+                    <img id="patern3" src="./images/ifpatlm1.png" alt="pattern3">
                 </div>
-                <div class="right-top-patern">
-                    <img id="patern3" src="./images/rapattr.png" alt="pattern3">
-                    <img id="patern4" src="./images/rapattr1.png" alt="pattern4">
+                <div class="right-top-patern" data-aos="fade-left" data-aos-delay="300">
+                    <img id="patern4" src="./images/ifpatrtp.png" alt="pattern4">
+                    <img id="patern5" src="./images/ifpatrm.png" alt="pattern5">
+                    <img id="patern6" src="./images/ifpatrm1.png" alt="pattern6">
                 </div>
             </div>
             <div class="center-logo">
-                <img id="patern5" src="./images/racenter.png" alt="center logo">
+                <img id="patern7" src="./images/ifpattp.png" alt="center logo">
             </div>
             <div class="cover-title d-flex flex-row justify-content-between">
                 <div>
-                    <img id="patern6" src="./images/rapatctr.png" alt="left pattern">
+
                 </div>
                 <div class="text-center">
                     <h5 class="sub-title">Wedding Invitation</h5>
-                    <h3 class="bride-name">Romeo <br><span>&</span><br> Juliet</h3>
+                    <h3 class="bride-name">Fullan <br><span>&</span><br> Annisa</h3>
                 </div>
                 <div>
-                    <img id="patern7" src="./images/rapatctr1.png" alt="right pattern">
+
                 </div>
             </div>
             <div class="cover-sub-title d-flex flex-row justify-content-between">
                 <div>
-                    <img id="patern8" src="./images/rapatbt.png" alt="bottom pattern">
+
                 </div>
                 <div class="text-center content-sub-title">
-                    <h5 class="sub-title">Saturday, 22 march 2025 </h5>
-                    <h3 class="guest-name">Dear Mr./Mrs <br><span>Jhon</span></h3>
-                    <button class="open-btn" onclick="openInvitation()">OPEN INVITATION</button>
+                    <h5 class="sub-title">Saturday, <span class="num">12</span>&nbsp;Mei&nbsp;<span
+                            class="num">2026</span>
+                    </h5>
+                    <h3 class="guest-name">Dear Mr./Mrs <br><span>Abdullah</span></h3>
+                    <button class="open-btn mt-4" onclick="openInvitation()">OPEN INVITATION</button>
                 </div>
                 <div>
-                    <img id="patern9" src="./images/rapatbt1.png" alt="bottom pattern">
+
                 </div>
             </div>
             <div class="bottom-patern">
-                <div class="left-bottom-patern">
-                    <img id="patern10" src="./images/rapatbtl.png" alt="bottom left pattern">
+                <div class="left-bottom-patern" data-aos="fade-up" data-aos-delay="300">
+                    <img id="patern10" src="./images/ifpatlb.png" alt="bottom left pattern">
                 </div>
-                <div class="right-bottom-patern">
-                    <img id="patern11" src="./images/rapatbtr.png" alt="bottom right pattern">
+                <div class="right-bottom-patern" data-aos="fade-up" data-aos-delay="300">
+                    <img id="patern11" src="./images/ifpatrb.png" alt="bottom right pattern">
                 </div>
             </div>
         </div>
@@ -1095,24 +1261,33 @@
     <!-- MAIN CONTENT -->
     <section class="first-section p-3 d-flex flex-column" data-aos="fade-up">
         <div class="wedding-card">
-            <div class="content-first-section d-flex flex-column justify-content-end align-items-center">
-                <div class="icon">
-                    <img src="./images/raring.png" alt="ring icon">
+            <div class="photo-bottom-patern">
+                <img id="patern12" src="./images/ifpatwclb.png" alt="patern12">
+            </div>
+            <div class="photo-frame">
+                <div class="photo-inner">
+                    <img src="./images/ifbride.png" alt="Bride & Groom">
                 </div>
-                <h1>ROMEO</h1>
-                <p class="and">&</p>
-                <h1>JULIET</h1>
-                {{-- <h5 class="sub-title">Wedding Invitation</h5> --}}
             </div>
-        </div>
-        <div class="info-first-section mt-4 d-flex flex-column align-items-center">
-            <div class="pattern-first-section">
-                <img id="patern12" src="./images/rapatpat1.png" alt="pattern12">
+            <div class="photo-right-patern">
+                <img id="patern13" src="./images/ifpatwcrb.png" alt="patern13">
             </div>
-            <div class="date mt-4 d-flex justify-content-around">
-                <h5 class="day">22</h5>
-                <h5 class="month">03</h5>
-                <h5 class="year">25</h5>
+
+            <div class="content d-flex flex-column justify-center mt-4 ">
+                <div class="d-flex justify-content-center gap-3">
+                    <h1>Fulan</h1>
+                    <p class="and">&</p>
+                    <h1>Annisa</h1>
+                </div>
+                <h1 class="text-center insyallah">Insyallah</h1>
+                <div class="date-card-container d-flex justify-content-center align-items-center gap-3 mt-3">
+                    <p class="card-day col-4 text-center">saturday</p>
+                    <h1 class="card-date">12</h1>
+                    <p class="card-month col-4 text-center">Mei</p>
+                </div>
+                <div class="ring-icon-container d-flex justify-content-center mt-3">
+                    <img class="ring-icon" src="./images/ifpatring.png" alt="ring icon">
+                </div>
             </div>
         </div>
     </section>
@@ -1121,33 +1296,33 @@
         <section class="bio-secetion pt-3 px-3 d-flex flex-column align-items-center">
             <div class="groom row mx-0" data-aos="fade-right" data-aos-delay="500">
                 <div class="bio-groom-image p-2 col-6">
-                    <img id="patern13" src="./images/ragroom.png" alt="groom image">
+                    <img id="patern14" src="./images/ifgroom.png" alt="groom image">
                 </div>
                 <div class="bio-groom-text col-6">
-                    <h1>Romeo Lukaku</h1>
+                    <h1>Muhammad Fullan</h1>
                     <p>Son Of <br>
-                        <span>John Doe</span><br>
+                        <span>Samsudin Aliudin</span><br>
                         <span>and</span> <br>
-                        <span>Maria Jane</span>
+                        <span>Fulana Aminah</span>
                     </p>
                 </div>
             </div>
             <div class="bride row mt-4 mx-0" data-aos="fade-left" data-aos-delay="600">
                 <div class="bio-bride-text col-6 d-flex flex-column justify-content-end">
-                    <h1>Juliet Robert</h1>
+                    <h1>Annisa Fatimah</h1>
                     <p>Daughter Of <br>
-                        <span>Michel Durran</span><br>
+                        <span>Zein Fauzan</span><br>
                         <span>and</span> <br>
-                        <span>Olivia Jansen</span>
+                        <span>Dian Khumairah</span>
                     </p>
                 </div>
                 <div class="bio-bride-image p-2 col-6">
-                    <img id="patern14" src="./images/rabrides.png" alt="bride image">
+                    <img id="patern15" src="./images/ifbrides.png" alt="bride image">
                 </div>
             </div>
             <div class="quote-text" data-aos="fade-up" data-aos-delay="600">
                 <p>"And so the adventure begins..."</p>
-                <p>Romeo & Juliet</p>
+                <p>Fullan & Annisa</p>
             </div>
 
         </section>
@@ -1156,10 +1331,10 @@
             <div class="information-content">
                 <div class="info-top-patern">
                     <div class="info-left-top-patern">
-                        <img id="patern15" src="./images/rapattl2.png" alt="pattern15">
+                        <img id="patern16" src="./images/ifpattpl.png" alt="pattern15">
                     </div>
                     <div class="info-right-top-patern">
-                        <img id="patern16" src="./images/rapattr2.png" alt="pattern16">
+                        <img id="patern17" src="./images/ifpattpr.png" alt="pattern16">
                     </div>
                 </div>
                 <div class="info-where-when-section">
@@ -1167,7 +1342,7 @@
                         <h4>WHERE & WHEN</h4>
                         <h1>WEEDING DAY</h1>
                         <p class="mt-3">"And so the adventure begins..."</p>
-                        <p>Romeo & Juliet</p>
+                        <p>Fullan & Annisa</p>
                         <hr>
                     </div>
                     <div class="event-box text-center d-flex flex-column align-items-center">
@@ -1205,10 +1380,10 @@
                 </div>
                 <div class="info-bottom-patern">
                     <div class="info-left-bottom-patern">
-                        <img id="patern17" src="./images/rapatbtl1.png" alt="pattern17">
+                        <img id="patern18" src="./images/ifpatbtl.png" alt="pattern18">
                     </div>
                     <div class="info-right-bottom-patern">
-                        <img id="patern18" src="./images/rapatbtr1.png" alt="pattern18">
+                        <img id="patern19" src="./images/ifpatbtr.png" alt="pattern19">
                     </div>
                 </div>
             </div>
@@ -1224,7 +1399,8 @@
 
         <section class="love-stories-section">
             <div class="pattern-first-section mb-2">
-                <img id="patern19" src="./images/rapatpat2.png" alt="pattern19">
+                <img id="patern20" src="./images/ifpat.png" alt="pattern20" data-aos="fade-down"
+                    data-aos-delay="600">
             </div>
             <div class="love-stories-content text-center">
                 <p>The Journey</p>
@@ -1233,7 +1409,7 @@
                     data-aos="fade-up" data-aos-delay="600">
                     <div class="timeline-item">
                         <div class="timeline-image">
-                            <img class="tl-trigger" data-bg="./images/tl1.png" src="./images/timeline1.png"
+                            <img class="tl-trigger" data-bg="./images/iftl1.png" src="./images/iftimeline1.png"
                                 alt="">
                         </div>
                         <div class="timeline-popup">
@@ -1244,13 +1420,12 @@
                                     <p class="quote">"And so the adventure begins..."</p>
                                     <p class="place">Jakarta</p>
                                 </div>
-                                {{-- <button class="close-popup">✕</button> --}}
                             </div>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-image">
-                            <img class="tl-trigger" data-bg="./images/tl2.png" src="./images/timeline2.png"
+                            <img class="tl-trigger" data-bg="./images/iftl1.png" src="./images/iftimeline2.png"
                                 alt="">
                         </div>
                         <div class="timeline-popup">
@@ -1266,7 +1441,7 @@
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-image">
-                            <img class="tl-trigger" data-bg="./images/tl1.png" src="./images/timeline3.png"
+                            <img class="tl-trigger" data-bg="./images/iftl2.png" src="./images/iftimeline3.png"
                                 alt="">
                         </div>
                         <div class="timeline-popup">
@@ -1284,7 +1459,7 @@
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-image">
-                            <img class="tl-trigger" data-bg="./images/tl2.png" src="./images/timeline4.png"
+                            <img class="tl-trigger" data-bg="./images/iftl2.png" src="./images/iftimeline4.png"
                                 alt="">
                         </div>
                         <div class="timeline-popup">
@@ -1300,25 +1475,32 @@
                     </div>
                 </div>
                 <p class="quote">And so the adventure begins...</p>
-                <p class="quote">Romeo & Juliet</p>
+                <p class="quote">Fullan & Annisa</p>
         </section>
 
         <section class="glimpes-section">
             <div class="pattern-first-section mb-2">
-                <img id="patern19" src="./images/rapatpat2.png" alt="pattern19">
+                <img id="patern20" src="./images/ifpat.png" alt="pattern20" data-aos="fade-down"
+                    data-aos-delay="600">
             </div>
             <div class="glimpes-content text-center">
                 <p>glimpses of</p>
                 <h1>Memorable Moments</h1>
                 <div class="gallery my-3">
                     <div class="gallery-main" data-aos="fade-left" data-aos-delay="600">
-                        <img src="./images/gallery1.png" alt="moment 1">
+                        <img src="./images/ifgallery1.png" alt="moment 1">
                     </div>
                     <div class="gallery-side" data-aos="fade-right" data-aos-delay="600">
-                        <img src="./images/gallery2.png" alt="moment 2">
-                        <img src="./images/gallery3.png" alt="moment 3">
-                        <img src="./images/gallery4.png" alt="moment 4">
+                        <img src="./images/ifgallery2.png" alt="moment 2">
+                        <img src="./images/ifgallery3.png" alt="moment 3">
+                        <img src="./images/ifgallery4.png" alt="moment 4">
                     </div>
+                </div>
+                <div class="gallery-bot mb-3">
+                    <img src="./images/ifgallery5.png" alt="moment 5" data-aos="fade-up" data-aos-delay="600">
+                    <img src="./images/ifgallery6.png" alt="moment 6" data-aos="fade-up" data-aos-delay="600">
+                    <img src="./images/ifgallery7.png" alt="moment 7" data-aos="fade-up" data-aos-delay="600">
+                    <img src="./images/ifgallery8.png" alt="moment 8" data-aos="fade-up" data-aos-delay="600">
                 </div>
                 <div class="mb-3">
                     <iframe width="100%" src="https://www.youtube.com/embed/PWcI8eXynmM?si=SxQhQl-VdWL_rayE"
@@ -1327,8 +1509,10 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <p class="quote">And so the adventure begins...</p>
-                <p class="quote">Romeo & Juliet</p>
+                <p class="quote">Fullan & Annisa</p>
         </section>
+
+        <hr>
 
         <section class="rsvp-section">
             <div class="rsvp-content">
@@ -1369,7 +1553,7 @@
 
         <section class="gift-section">
             <div class="top-gift-patern">
-                <img id="patern20" src="./images/ragt.png" alt="pattern20">
+                <img id="patern21" src="./images/ifgt.png" alt="pattern21">
             </div>
             <div class="gift-content">
                 <h1>Share the Love</h1>
@@ -1393,12 +1577,12 @@
                 <div class="gifted-address">
                     <i class="bi bi-gift"></i>
                     <p>Or you can send your gift to:</p>
-                    <p>Romeo & Juliet, 123 Wedding St, Jakarta, Indonesia</p>
+                    <p>Fullan & Annisa, 123 Wedding St, Jakarta, Indonesia</p>
                     <button class="copy-btn">Confirm</button>
                 </div>
             </div>
             <div class="bottom-gift-patern">
-                <img id="patern21" src="./images/ragb.png" alt="pattern21">
+                <img id="patern22" src="./images/ifgb.png" alt="pattern22">
             </div>
         </section>
 
@@ -1407,7 +1591,7 @@
                 <h2>Thank You</h2>
                 <p>We are grateful for your presence and blessings on our special day. Your love and support mean the
                     world to us as we embark on this new journey together.</p>
-                <p>With love, <br>Romeo & Juliet</p>
+                <p>With love, <br>Fullan & Annisa</p>
             </div>
         </section>
         <section class="footer-section">

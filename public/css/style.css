@@ -965,6 +965,21 @@ li.cross::before {
     font-family: poppins, sans-serif;
 }
 
+.btn-toggle[aria-expanded="true"] {
+    background-color: #d6b86a;
+    color: #fff !important;
+}
+
+.link-body-emphasis {
+
+    color: #fff !important;
+}
+
+.btn-toggle-nav a:hover, .btn-toggle-nav a:focus {
+    background-color: #d6b86a !important;
+    color: #fff !important;
+}
+
 /* info akun */
 
 .account-info .card {

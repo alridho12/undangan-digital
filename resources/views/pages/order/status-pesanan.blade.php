@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Order')
+@section('title', 'Status Pesanan')
 @section('content')
     <main class="dashboard-customer d-md-flex min-vh-100 flex-no-wrap">
         @include('layouts.partials.sidebar')
         <div class="main-div rounded-md-start-4 flex-grow-1 p-5 mb-5">
-            <h3 class="fw-bold dashboard-title">Order</h3>
+            <h3 class="fw-bold dashboard-title">Status Pesanan</h3>
             <section class="orders-section">
                 <div class="card border-0 shadow-sm rounded-4">
                     <div class="card-body">
@@ -81,10 +81,11 @@
                                                             onclick="showDetailData(this)">
                                                             <i class="bi bi-eye me-2"></i>Lihat</a></li>
                                                     <li><a class="dropdown-item" href="#">
-                                                            <i class="bi bi-pencil me-2"></i>Edit</a></li>
+                                                            <i class="bi bi-check-circle me-2"></i>Sukses</a></li>
+                                                    <li>
                                                     </li>
-                                                    <li><a class="dropdown-item text-danger" href="#">
-                                                            <i class="bi bi-trash me-2"></i>Hapus</a></li>
+                                                    <li><a class="dropdown-item" href="#">
+                                                            <i class="bi bi-telephone me-2"></i>Kontak</a></li>
                                                 </ul>
                                             </div>
                                         </td>
