@@ -41,3 +41,7 @@ Route::get('/redasian', function () {
 Route::get('/islamicfloral', function () {
     return view('pages.islamic-floral.index');
 });
+
+Route::get('/javaauthentic', function () {
+    return view('pages.java-authentic.index');
+});

@@ -390,7 +390,7 @@
             position: absolute;
             width: 230px;
             height: auto;
-            top: 378px;
+            top: 326px;
             left: 16px;
             z-index: 2;
         }
@@ -399,14 +399,14 @@
             position: absolute;
             width: 230px;
             height: auto;
-            top: 378px;
+            top: 326px;
             right: 16px;
             z-index: 2;
         }
 
         .photo-frame {
             position: relative;
-            height: 490px;
+            height: 454px;
             padding: 10px;
             border: 2px solid #e0c088;
             border-radius: 180px;
