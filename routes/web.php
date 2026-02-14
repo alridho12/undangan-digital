@@ -45,3 +45,7 @@ Route::get('/islamicfloral', function () {
 Route::get('/javaauthentic', function () {
     return view('pages.java-authentic.index');
 });
+
+Route::get('/mystyrose', function () {
+    return view('pages.mysty-rose.index');
+});
