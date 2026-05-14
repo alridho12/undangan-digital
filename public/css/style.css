@@ -111,14 +111,14 @@ a {
     background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 360px) {
     .header .navmenu {
         order: 3;
     }
 
     .header .navbar-brand,
     .header .d-md-none {
-        margin: 0 65px 0 0;
+        margin: 0 40px 0 0;
         order: 1;
     }
 
@@ -1067,9 +1067,9 @@ li.cross::before {
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
-    [data-aos-delay] {
+    /* [data-aos-delay] {
         transition-delay: 0 !important;
-    }
+    } */
 
     /* [data-aos="fade-left"],
     [data-aos="fade-right"] {

@@ -49,3 +49,16 @@ Route::get('/javaauthentic', function () {
 Route::get('/mystyrose', function () {
     return view('pages.mysty-rose.index');
 });
+
+
+Route::get('/alora', function () {
+    return view('pages.alora.index');
+});
+
+Route::get('/swan', function () {
+    return view('pages.swan.index');
+});
+
+Route::get('/rose-garden', function () {
+    return view('pages.rose-garden.index');
+});
