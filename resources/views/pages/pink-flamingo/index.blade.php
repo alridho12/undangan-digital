@@ -53,10 +53,10 @@
 
             background: rgb(251 255 242 / 65%);
             /* senada tema */
-            border: 1px solid #8b2a14;
+            border: 1px solid #ed829c;
             border-radius: 50%;
 
-            color: #8b2a14;
+            color: #ed829c;
             font-size: 20px;
 
             display: flex;
@@ -146,10 +146,10 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            background-color: #7e2f3e;
-            background-image: url('./images/bgds2.png');
+            background-color: #ed829c;
+            background-image: url('./images/bgds3.png');
             background-size: cover;
-            background-position: center;
+            background-position: top center;
             transition: transform 1s ease-in-out;
             z-index: 999;
             overflow: hidden;
@@ -198,18 +198,13 @@
         }
 
         .left-top-patern {
-            right: 91px;
-            top: -90px;
+            right: 132px;
+            top: -130px;
         }
 
         .right-top-patern {
-            right: 107px;
-            top: -55px;
-        }
-
-        .right-top-patern {
-            display: flex;
-            justify-content: flex-end;
+            right: 143px;
+            top: -35px;
         }
 
         #patern1 {
@@ -222,7 +217,7 @@
         }
 
         #patern3 {
-            width: 380px;
+            width: 281px;
 
         }
 
@@ -244,19 +239,19 @@
         }
 
         #paternl1 {
-            width: 30vw;
+            width: 62vw;
             position: relative;
-            left: 151px;
-            top: 30px;
+            left: 48px;
+            top: 77px;
             animation: leftWaveFlower 4s ease-in-out infinite;
         }
 
         #paternl2 {
-            width: 37vw;
+            width: 27vw;
             position: relative;
-            bottom: 22px;
-            left: 131px;
-            animation: leftWaveFlower 4s ease-in-out infinite;
+            bottom: -92px;
+            left: 169px;
+            /* animation: leftWaveFlower 4s ease-in-out infinite; */
         }
 
         #paternl3 {
@@ -274,7 +269,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            left: 27px;
+            left: 13px;
         }
 
         .patern-header {
@@ -282,7 +277,7 @@
             flex-direction: column;
             align-items: center;
             gap: 24px;
-            color: #f5f5f5;
+            color: #ca2b52;
             height: 55vh;
             width: 63vw;
             border-radius: 0 64px 0 0;
@@ -330,7 +325,7 @@
         }
 
         .open-btn-content {
-            background-color: #7e2f3e;
+            background-color: #ed829c;
             border-radius: 33px;
             width: 81%;
             padding: 5px 10px;
@@ -358,25 +353,25 @@
         #paternr1 {
             width: 70vw;
             position: relative;
-            left: 14px;
-            top: 26px;
+            left: -38px;
+            top: 23px;
             animation: rightWaveFlower 4s ease-in-out infinite;
         }
 
         #paternr2 {
-            width: 37vw;
+            width: 23vw;
             position: relative;
-            bottom: 32px;
-            left: 1px;
-            animation: rightWaveFlower 4s ease-in-out infinite;
+            bottom: 52px;
+            left: 15px;
+            /* animation: rightWaveFlower 4s ease-in-out infinite; */
         }
 
         .bottom-patern {
             position: absolute;
-            top: 79%;
-            left: -6%;
+            top: 58%;
+            left: -31px;
             transform: translate(-50%, -50%);
-            z-index: 2;
+            z-index: -1;
             display: flex;
             pointer-events: none;
             /* animation: moveFlower 10s ease-in-out infinite; */
@@ -408,12 +403,12 @@
         .center-bottom-patern {
             position: relative;
             width: 100%;
-            animation: moveFlower 10s ease-in-out infinite;
+            /* animation: moveFlower 10s ease-in-out infinite; */
         }
 
         #patern6 {
             position: absolute;
-            width: 113vw;
+            width: 109vw;
         }
 
         .bg-video {
@@ -480,8 +475,8 @@
             width: 100%;
             z-index: 1;
             top: 0;
-            background-color: #692727;
-            background-image: url('./images/bgwcd2.png');
+            background-color: #e8023c;;
+            background-image: url('./images/bgwcd3.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -544,16 +539,17 @@
 
         .left-top-patern-wc {
             position: relative;
-            top: -89px;
-            right: 180px;
+            top: -13px;
+            right: 24px;
             width: 100%;
         }
 
         .right-top-patern-wc {
             position: relative;
-            top: -89px;
-            right: 272px;
+            top: -13px;
+            left: -37px;
             width: 100%;
+
         }
 
         #patern7 {
@@ -578,11 +574,11 @@
 
         /* gambar background */
         #wedding-card-bg {
-            width: 110%;
+            width: 139%;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -41%);
+            transform: translate(-55%, -56%);
             font-family: 'Cinzel Decorative', cursive;
             animation: revealUp 6s ease forwards;
             animation-delay: 5s;
@@ -609,7 +605,7 @@
             left: 50%;
             transform: translate(-50%, -63%);
             text-align: center;
-            color: #6b2e2e;
+            color: #f484a0;
         }
 
         .text-content {
@@ -667,7 +663,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #6b2e2e;
+            color: #f484a0;
             font-size: 12px;
             font-family: "Cinzel Decorative", cursive;
             font-weight: 600;
@@ -676,7 +672,7 @@
 
         .save-date {
             margin-top: 20px;
-            background-color: #7e2f3e;
+            background-color: #ed829c;
             color: #f5f5f5;
             border: none;
             padding: 10px 20px;
@@ -717,7 +713,7 @@
             min-height: 100vh;
             position: relative;
             z-index: 2;
-            background-color: #7e2f3e;
+            background-color: #ed829c;
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -760,7 +756,7 @@
         }
 
         .profile {
-            background-image: url('./images/bgprofiled2.png');
+            background-image: url('./images/bgprofiled3.png');
             background-position: center bottom;
             background-size: cover;
             background-color: #fbfff2;
@@ -778,7 +774,7 @@
             font-weight: 500;
             line-height: 18px;
             letter-spacing: 1.9px;
-            color: #373A38;
+            color: #e8023c;
             font-family: "quicksand", sans-serif;
             text-align: center;
         }
@@ -791,7 +787,7 @@
             font-family: "ZCOOL XiaoWei", serif;
             font-weight: bold;
             letter-spacing: 2px;
-            color: #6b2e2e;
+            color: #ff0040;
         }
 
         #lottie-overlay-profile {
@@ -845,7 +841,7 @@
         }
 
         .invitation-info {
-            background-image: url('./images/bginfod2.png');
+            background-image: url('./images/bginfod3.png');
             background-position: bottom center;
             background-size: cover;
             background-color: #7e2f3e;
@@ -931,7 +927,7 @@
 
         .reception-info {
             background-color: #fbfff2;
-            background-image: url('./images/bgrd2.png');
+            background-image: url('./images/bgrd3.png');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -954,7 +950,7 @@
 
         .reception-text h2 {
             font-size: 28px;
-            color: #6b2e2e;
+            color: #ff0040;
             font-family: "ZCOOL XiaoWei", serif;
             font-weight: normal;
             margin: 0;
@@ -966,7 +962,7 @@
             font-weight: 500;
             text-transform: uppercase;
             margin: 0;
-            color: #692727
+            color: #e8023c;
         }
 
         .reception-text p {
@@ -975,7 +971,7 @@
             font-size: 13px;
             font-weight: 500;
             margin: 0;
-            color: #692727
+            color: #e8023c;
         }
 
         .patern-reception img {
@@ -1011,7 +1007,7 @@
         .lst-btn {
             margin-top: 20px;
             background-color: #f5f5f5;
-            color: #692727;
+            color: #e8023c;;
             border: none;
             padding: 10px 20px;
             border-radius: 33px;
@@ -1024,7 +1020,7 @@
         }
 
         .love-stories-section {
-            background-image: url('./images/bglsd2.png');
+            background-image: url('./images/bglsd3.png');
             background-position: top center;
             background-size: cover;
             background-color: #fbfff2;
@@ -1053,7 +1049,7 @@
 
         .love-stories-text h2 {
             font-size: 28px;
-            color: #6b2e2e;
+            color: #ff0040;
             font-family: "ZCOOL XiaoWei", serif;
             font-weight: normal;
             margin: 0;
@@ -1065,7 +1061,7 @@
             font-weight: 600;
             text-transform: uppercase;
             margin: 0;
-            color: #692727;
+            color: #e8023c;;
         }
 
         .love-stories-text p {
@@ -1074,7 +1070,7 @@
             font-size: 12px;
             font-weight: 500;
             margin: 0;
-            color: #692727;
+            color: #e8023c;;
         }
 
         .galery-section {
@@ -1185,7 +1181,7 @@
         }
 
         .gift-section {
-            background-image: url('./images/bginfod2.png');
+            background-image: url('./images/bginfod3.png');
             background-position: bottom center;
             background-size: cover;
             background-color: #7e2f3e;
@@ -1391,7 +1387,7 @@
         }
 
         .thanks-section {
-            background-image: url('./images/bgtkd2.png');
+            background-image: url('./images/bgtkd3.png');
             background-position: bottom center;
             background-size: cover;
             background-color: #fbfbfb;
@@ -1420,7 +1416,7 @@
 
         .thanks-text h2 {
             font-size: 28px;
-            color: #6b2e2e;
+            color: #ff0040;
             font-family: "ZCOOL XiaoWei", serif;
             font-weight: normal;
             margin: 0;
@@ -1432,7 +1428,7 @@
             font-size: 12px;
             font-weight: 500;
             margin: 0;
-            color: #692727;
+            color: #e8023c;;
         }
 
         .thank-img {
@@ -1465,7 +1461,7 @@
         }
 
         .footer-section {
-            background-color: #7e2f3e;
+            background-color: #ed829c;
             padding: 20px;
             text-align: center;
         }
@@ -1494,16 +1490,17 @@
     <div id="cover">
         <div class="cover-content">
             <div class="top-patern">
-                <div class="center-top-patern">
-                    <img id="patern2" src="./images/ctcd2.png" alt="pattern2" data-aos="fade-down"
-                        data-aos-delay="300" data-aos-duration="2200">
+                <div class="left-top-patern" data-aos="fade-right" data-aos-delay="300" data-aos-duration="2200">
+                    <img id="patern1" src="./images/ltcd3.png" alt="pattern1">
+                </div>
+                <div class="right-top-patern" data-aos="fade-left" data-aos-delay="300" data-aos-duration="2200">
+                    <img id="patern3" src="./images/rtcd3.png" alt="pattern3">
                 </div>
             </div>
             <div class="middle-patern">
                 <div class="left-middle-patern" data-aos="fade-right" data-aos-delay="300" data-aos-duration="2200">
-                    <img id="paternl1" src="./images/pml1d2.png" alt="pattern4">
-                    <img id="paternl2" src="./images/pml2d2.png" alt="pattern4">
-                    <img id="paternl3" src="./images/pml3d2.png" alt="pattern4">
+                    <img id="paternl1" src="./images/pml1d3.png" alt="pattern4">
+                    <img id="paternl2" src="./images/pml2d3.png" alt="pattern4">
                 </div>
                 <div class="center-middle-patern">
                     <div class="patern-header px-3 py-5" data-aos="fade-up" data-aos-delay="300"
@@ -1522,14 +1519,14 @@
                     </div>
                 </div>
                 <div class="right-middle-patern" data-aos="fade-left" data-aos-delay="300" data-aos-duration="2200">
-                    <img id="paternr1" src="./images/pmr1d2.png" alt="pattern5">
-                    <img id="paternr2" src="./images/pmr2d2.png" alt="pattern5">
+                    <img id="paternr1" src="./images/pmr1d3.png" alt="pattern5">
+                    <img id="paternr2" src="./images/pmr2d3.png" alt="pattern5">
                 </div>
             </div>
 
             <div class="bottom-patern">
                 <div class="center-bottom-patern" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
-                    <img id="patern6" src="./images/pbd2.png" alt="pattern6">
+                    <img id="patern6" src="./images/pbd3.png" alt="pattern6">
                 </div>
             </div>
         </div>
@@ -1538,7 +1535,7 @@
     <!-- MAIN CONTENT -->
     <section id="mainContent" class="first-section flex-column">
         <video autoplay muted class="bg-video" id="bgVideo">
-            <source src="./video/design2.mp4" type="video/mp4">
+            <source src="./video/design3.mp4" type="video/mp4">
         </video>
 
         <!-- overlay biar teks kebaca -->
@@ -1550,31 +1547,31 @@
         </div> --}}
         <div class="top-patern-wc">
             <div class="left-top-patern-wc fade-right-custom">
-                <img src="./images/ltcd2.png" id="patern7" alt="pattern7">
+                <img src="./images/ltwcd3.png" id="patern7" alt="pattern7">
             </div>
             <div class="right-top-patern-wc fade-left-custom">
-                <img src="./images/rtcd2.png" id="patern7" alt="pattern7">
+                <img src="./images/rtwcd3.png" id="patern7" alt="pattern7">
             </div>
         </div>
         <div class="wedding-card py-3">
-            <div class="left-patern-wc fade-right-custom">
+            {{-- <div class="left-patern-wc fade-right-custom">
                 <img id="patern8" src="./images/wcmdld2.png" alt="pattern8">
-            </div>
+            </div> --}}
             <div class="middle-patern-wc">
-                <img id="wedding-card-bg" src="./images/wcmdfd2.png" alt="Wedding Card">
+                <img id="wedding-card-bg" src="./images/wcmdfd3.png" alt="Wedding Card">
                 <div class="text-content">
                     <p class="subtitle">The Wedding of</p>
                     <h1>STEVEN <br>&<br> ELIZABETH</h1>
                     <div class="date my-4">
-                        <img src="./images/dd1.png" alt="">
+                        <img src="./images/dd3.png" alt="">
                         <span class="text-uppercase">20 September 2025</span>
                     </div>
                     <button class="save-date text-uppercase">Save the Date</button>
                 </div>
             </div>
-            <div class="right-patern-wc fade-left-custom">
+            {{-- <div class="right-patern-wc fade-left-custom">
                 <img id="patern9" src="./images/wcmdrd2.png" alt="pattern9">
-            </div>
+            </div> --}}
         </div>
     </section>
 
@@ -1652,7 +1649,7 @@
             <div class="invitation-info-content">
                 <div class="space-start"></div>
                 <div class="patern-info" data-aos="fade-up" data-aos-delay="300" data-aos-duration="2200">
-                    <img src="./images/ptid2.png" alt="pattern info">
+                    <img src="./images/ptid3.png" alt="pattern info">
                 </div>
                 <div class="space"></div>
                 <div class="save-date-info" data-aos="fade-up" data-aos-delay="300" data-aos-duration="2200">
@@ -1699,7 +1696,7 @@
                             <h2>Akad Nikah</h2>
                         </div>
                         <div class="patern-reception">
-                            <img src="./images/prd1.png" alt="Pattern Reception">
+                            <img src="./images/prd3.png" alt="Pattern Reception">
                         </div>
                         <div class="reception-text">
                             <h3>20 September 2025</h3>
@@ -1720,7 +1717,7 @@
                             <h2>Resepsi</h2>
                         </div>
                         <div class="patern-reception">
-                            <img src="./images/prd1.png" alt="Pattern Reception">
+                            <img src="./images/prd3.png" alt="Pattern Reception">
                         </div>
                         <div class="reception-text">
                             <h3>20 September 2025</h3>

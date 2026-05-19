@@ -62,3 +62,7 @@ Route::get('/swan', function () {
 Route::get('/rose-garden', function () {
     return view('pages.rose-garden.index');
 });
+
+Route::get('/flamingo', function () {
+    return view('pages.pink-flamingo.index');
+});
