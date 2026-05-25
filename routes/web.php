@@ -66,3 +66,7 @@ Route::get('/rose-garden', function () {
 Route::get('/flamingo', function () {
     return view('pages.pink-flamingo.index');
 });
+
+Route::get('/peacock', function () {
+    return view('pages.green-peacock.index');
+});
